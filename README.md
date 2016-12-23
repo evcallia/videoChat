@@ -1,11 +1,5 @@
-# Folder Contains a Boiler Plate for a MERN Project
+# Video Chat and Instant Message Application
 
-run npm start to run both servers...  
-&nbsp;&nbsp;&nbsp; Express server on localhost:8000   --> Using nodemon  
-&nbsp;&nbsp;&nbsp; React server on localhost:3000   --> Using react-scripts  
+Users create and account and login  
 
-Both servers will restart on save for easy development  
-
-webpack is configured to direct api calls to localhost:8000  
-
-Resource: https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/  
+Once logged in, users can make video calls and instant message other users who are online
