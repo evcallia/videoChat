@@ -1,0 +1,23 @@
+{
+  "name": "mern_boiler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon server.js\" \"cd client && npm start\"",
+    "server": "babel-node server.js",
+    "client": "babel-node start-client.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.1.0"
+  }
+}
