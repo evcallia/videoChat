@@ -5,7 +5,7 @@ var mongoose = require('mongoose'),
     path = require('path'),
     models_path = path.join(__dirname, "../models"),
     reg = new RegExp(".js$", "i"),
-    dbURI = 'mongodb://localhost/<__YOUR_DB_HERE__>';
+    dbURI = 'mongodb://localhost/videoChat';
 
 mongoose.connect(dbURI);
 
