@@ -1,1 +1,72 @@
-/*Your style here*/
+/*ALL PAGE*/
+body, html {
+    height: 100%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.center-text{
+    text-align: center;
+}
+/*END ALL PAGE*/
+
+
+
+/*MAIN PAGE*/
+/*Head*/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(52, 219, 129);
+}
+.parallax1{
+    background-image: url("https://dreamapply.com/wp-content/uploads/2016/02/Home-office-macbookair-apple-brand-notebook-computer-top-uhd-4k-wallpapers-2560x1440-1024x576.jpg");
+    padding-top: 200px;
+    height: 750px;
+}
+.parallax1 h1{
+    font-size: 5em;
+}
+.block{
+    display: block;
+}
+.parallax1 h1, .parallax1 h2, .parallax1 button{
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(36, 36, 36, 0.59);
+    border-radius: 20px;
+}
+.parallax1 button{
+    color: white;
+    background-color: rgb(32, 150, 87);
+    margin: 25px;
+    width: 150px;
+    font-size: 1.25em;
+}
+.main-icon{
+    width: 75px;
+    height: 75px;
+}
+
+/*Body*/
+.main-body{
+    background-color: gray;
+    padding: 40px;
+}
+
+/*Footer*/
+.main-foot{
+    background-color: rgb(13, 126, 65);
+    height: 75px;
+}
+.main-foot h6{
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 0 25px 0 25px;
+    color: white;
+    line-height: 55px;
+}
+/*END MAIN PAGE*/

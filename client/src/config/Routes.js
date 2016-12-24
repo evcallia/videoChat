@@ -6,13 +6,15 @@ var React = require('react'),
     IndexRoute = ReactRouter.IndexRoute
 
 //import components
-import MyComponent from '../components/MyComponent';
+import Welcome from '../components/Welcome';
+import Login from '../components/Login'
 
 
 module.exports = (
   <Router history={hashHistory}>
     <Route path='/' >
-      <IndexRoute component={MyComponent}/>
+      <IndexRoute component={Welcome}/>
+      <Route path='login' component={Login}/>
     </Route>
   </Router>
 )
