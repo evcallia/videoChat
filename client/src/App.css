@@ -1,6 +1,7 @@
 /*ALL PAGE*/
 body, html {
     height: 100%;
+    padding-top: 50px; /* accounts for nav bar*/
 }
 .container{
     width: 80%;
@@ -70,3 +71,15 @@ body, html {
     line-height: 55px;
 }
 /*END MAIN PAGE*/
+
+
+
+/*LOGIN PAGE*/
+.loginBody{
+    height: 600px;
+    padding-top: 100px;
+}
+.loginBody p{
+    margin-top: 50px;
+    text-align: center;
+}

@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import Link from 'react-router';
+import { Link } from 'react-router';
 // import axios from 'axios';
 
 import NavigationBar from './NavigationBar';
+import Footer from './Footer';
 
 class Welcome extends Component {
     constructor(){
@@ -18,7 +19,7 @@ class Welcome extends Component {
                 <NavigationBar log={true} reg={true}/>
                 <Head />
                 <Body />
-                <Foot />
+                <Footer />
             </div>
         );
     }
@@ -31,7 +32,7 @@ function Head() {
             <span className="block"><h2>A video calling and instant messaging application</h2></span>
             <span className="block">
                 <button className='btn'>Find Out More</button>
-                <button className='btn'>Sign Up</button>
+                <Link to='registration'><button className='btn'>Sign Up</button></Link>
             </span>
         </div>
     )
@@ -54,18 +55,6 @@ function Body() {
                     </div>
                 </div>
             </div>
-        </div>
-    )
-}
-
-function Foot(){
-    return(
-        <div className='main-foot text-center'>
-            <h6>Site Created By:</h6>
-            <a href="www.evancallia.com"><h6>Evan Callia</h6></a>
-            {/* <Link to='www.evancallia.co'><h6>Evan Callia</h6></Link> */}
-            <h6>and</h6>
-            <h6>Jeff Kwok</h6>
         </div>
     )
 }

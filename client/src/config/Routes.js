@@ -8,6 +8,7 @@ var React = require('react'),
 //import components
 import Welcome from '../components/Welcome';
 import Login from '../components/Login'
+import Registration from '../components/Registration'
 
 
 module.exports = (
@@ -15,6 +16,7 @@ module.exports = (
     <Route path='/' >
       <IndexRoute component={Welcome}/>
       <Route path='login' component={Login}/>
+      <Route path='registration' component={Registration}/>
     </Route>
   </Router>
 )
