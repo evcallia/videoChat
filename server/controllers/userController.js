@@ -12,8 +12,15 @@ function UserController() {
     };
     this.create = function(req, res) {
         var user = new User(req.body);
-        user.save();
-        res.json(user);
+        user.save(function(err){
+            if(err){
+                // console.log('********* add user error ******', err);
+                res.json(err)
+            }else{
+                // console.log(user);
+                res.json(user);
+            }
+        });
     };
     this.update = function(req, res) {
         User.update({_id: req.params.id}, req.body, function(err){

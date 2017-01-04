@@ -4,23 +4,21 @@ console.log("Model Loaded");
 var mongoose = require('mongoose');
 
 var UserSchema = new mongoose.Schema({
-    name: {
-        first: {
-            type: String,
-            required: [
-                true, 'First name is required'
-            ],
-            trim: true,
-            minlength: 2
-        },
-        last: {
-            type: String,
-            required: [
-                true, 'Last name is required'
-            ],
-            trim: true,
-            minlength: 2
-        }
+    firstName: {
+        type: String,
+        required: [
+            true, 'First name is required'
+        ],
+        trim: true,
+        minlength: 2
+    },
+    lastName: {
+        type: String,
+        required: [
+            true, 'Last name is required'
+        ],
+        trim: true,
+        minlength: 2
     },
     email: {
         type: String,
@@ -57,12 +55,12 @@ var UserSchema = new mongoose.Schema({
             },
             message: "Password confirmation must match password"
         }
-    },
-    birthday:{
-        type: Date,
-        required: [true, 'Birthday is required'],
-        max: [Date(new Date()), 'Bithday must be in the past']
     }
+    // birthday:{
+    //     type: Date,
+    //     required: [true, 'Birthday is required'],
+    //     max: [Date(new Date()), 'Bithday must be in the past']
+    // }
 }, {timestamps: true})
 
 // UserSchema.pre('save', function(done){
