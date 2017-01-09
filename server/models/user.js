@@ -24,7 +24,7 @@ var UserSchema = new mongoose.Schema({
         type: String,
         trim: true,
         required: [
-            true, 'Email is requited'
+            true, 'Email is required'
         ],
         uinque: true,
         validate: {
@@ -36,7 +36,9 @@ var UserSchema = new mongoose.Schema({
     },
     password: {
         type: String,
-        required: true,
+        required: [
+            true, 'Password is required'
+        ],
         minlength: 8,
         maxlength: 32,
         validate: {
